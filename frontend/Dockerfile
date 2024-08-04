@@ -19,4 +19,4 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3000
-CMD ["nginx", "-g", "deamon off;"]
+#CMD ["nginx", "-g", "deamon off;"]
