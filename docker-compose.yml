@@ -13,15 +13,18 @@ services:
       - "./nginx.conf:/etc/nginx/nginx.conf"
     networks:
       - dev
+    platform: linux/arm64
 
   game:
     build:
       context: ./game
     networks:
       - dev
+    platform: linux/arm64
       
   frontend:
     build:
       context: ./frontend
     networks:
       - dev
+    platform: linux/arm64
