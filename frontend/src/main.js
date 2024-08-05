@@ -7,6 +7,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from './Home.vue'
 import Game from './Game.vue'
 import Mobile from './Mobile.vue'
+import MobileGame from './MobileGame.vue'
 import Init from './Init.vue'
 
 const router = createRouter({
@@ -27,6 +28,10 @@ const router = createRouter({
       path: '/game',
       component: Game
     },
+    {
+      path: '/mobilegame',
+      component: MobileGame
+    },    
   ],
   history: createWebHistory()
 })

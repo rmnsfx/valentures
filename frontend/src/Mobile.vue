@@ -36,7 +36,7 @@
       methods:{
         game() {
             // console.log('route to game');
-            this.$router.push({ path: 'game'});
+            this.$router.push({ path: 'mobilegame'});
             // window.location.href = "http://localhost:8080"
         }
       }
