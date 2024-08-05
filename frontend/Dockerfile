@@ -11,7 +11,7 @@ COPY . .
 # Build the Vue.js application for production
 RUN npm run build
 # Use the official nginx image as the base image for serving the application
-FROM nginx:stable-alpine as production-stage
+FROM nginx:stable-alpine AS production-stage
 # Copy the built files from the build-stage to the nginx html directory
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 # Copy custom nginx configuration files
