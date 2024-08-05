@@ -1,5 +1,5 @@
 # Use the official node image as the base image
-FROM node:20-alpine as build-stage
+FROM node:20-alpine AS build-stage
 # Set the working directory
 WORKDIR /app
 # Copy the package.json and package-lock.json files to the working directory
