@@ -22,6 +22,8 @@ services:
     networks:
       - dev
     platform: linux/amd64
+    ports:
+      - "8080:80"
       
   frontend:
     build:
@@ -29,3 +31,5 @@ services:
     networks:
       - dev
     platform: linux/amd64
+    ports:
+      - "3000:80"
