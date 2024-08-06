@@ -14,6 +14,7 @@ services:
     networks:
       - dev
     platform: linux/amd64
+    restart: always
 
 
   game:
@@ -24,6 +25,7 @@ services:
     platform: linux/amd64
     ports:
       - "8080:80"
+    restart: always
       
   frontend:
     build:
@@ -33,3 +35,4 @@ services:
     platform: linux/amd64
     ports:
       - "3000:80"
+    restart: always
