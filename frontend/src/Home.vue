@@ -8,7 +8,7 @@
               :height="250"
               :width="250"/>
           </v-row>
-          <v-row class="d-flex justify-center">
+          <v-row class="d-flex justify-center flex-column align-center text-center">
             <div class="text-h1 font-weight-bold">С Днём Рождения, Валерий Олегович!</div>
           </v-row>
           <v-row>
