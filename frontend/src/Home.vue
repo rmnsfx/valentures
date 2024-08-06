@@ -9,7 +9,7 @@
               :width="250"/>
           </v-row>
           <v-row class="d-flex justify-center flex-column align-center text-center">
-            <div class="text-h1 font-weight-bold" style="width:80%">С Днём Рождения, Валерий Олегович!</div>
+            <div class="text-h1 font-weight-bold" style="width:60%">С Днём Рождения, Валерий Олегович!</div>
           </v-row>
           <v-row>
               <Vue3Lottie
