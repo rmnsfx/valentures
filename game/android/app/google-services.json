@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600301543209",
+    "project_id": "valenture-8768f",
+    "storage_bucket": "valenture-8768f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600301543209:android:2eaf47827d9ba5c639e138",
+        "android_client_info": {
+          "package_name": "com.example.valenture"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsLQQzNpgUBGRkECHKzRqL-HT9j5AjHSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

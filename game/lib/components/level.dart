@@ -46,6 +46,7 @@ class Level extends World with HasGameRef<ValeryAdventure> {
       FlameAudio.play('DJ Airhorn Sound Effect.mp3', volume: game.soundVolume);
       FlameAudio.bgm.play('Hypnosis-sound-effect.mp3', volume: game.soundVolume);
       // FlameAudio.playLongAudio('Drone-sound.mp3', volume: game.soundVolume);
+      add(CongratText());
     }
 
     return super.onLoad();

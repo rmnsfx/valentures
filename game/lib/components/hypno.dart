@@ -20,7 +20,7 @@ class Hypno extends SpriteAnimationComponent with
         textureSize: Vector2(400, 300),
       ),
     );
-    position = Vector2( game.size.x / 9, game.size.y / 12 );
+    position = Vector2( game.size.x / 12, game.size.y / 12 );
     priority = 100;
     
     return super.onLoad();
@@ -35,6 +35,26 @@ class Hypno extends SpriteAnimationComponent with
   // void onTapUp(TapUpEvent event) {
   //   super.onTapUp(event);
   // }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
+  }
+}
+
+
+class CongratText extends TextComponent with HasGameRef<ValeryAdventure> {
+
+  late String congratText;
+
+  @override
+  Future<void> onLoad() async {
+    await super.onLoad();
+
+    text = "Game Over ..?";
+    position = Vector2(80, 100);
+    scale = Vector2(1, 1);
+  } 
 
   @override
   void update(double dt) {
