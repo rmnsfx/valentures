@@ -13,6 +13,7 @@
     "pinia": "^2.1.7",
     "roboto-fontface": "*",
     "vue": "^3.4.21",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.3.3",
     "vue3-lottie": "^3.3.0",
     "vuetify": "^3.0.0-beta.0",
