@@ -9,6 +9,7 @@ import Game from './Game.vue'
 import Mobile from './Mobile.vue'
 import MobileGame from './MobileGame.vue'
 import Init from './Init.vue'
+import VueGtag from "vue-gtag";
 
 const router = createRouter({
   routes: [
@@ -43,4 +44,5 @@ createApp(App)
   .use(vuetify)
   .use(Vue3Lottie)
   .use(router)
+  .use(VueGtag, { config: { id: "G-1YCM18H098" }})
   .mount('#app')
