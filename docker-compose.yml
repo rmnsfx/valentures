@@ -13,13 +13,24 @@ services:
        
     volumes:
       - "./nginx.conf:/etc/nginx/nginx.conf"
-      - "./key.pem:/root/ssl/key.pem"
-      - "./cert.pem:/root/ssl/cert.pem"
+      # - "./key.pem:/root/ssl/key.pem"
+      # - "./cert.pem:/root/ssl/cert.pem"
+      - "./certbot/conf:/etc/letsencrypt"
+      - "./certbot/www:/var/www/certbot"
     networks:
       - dev
     platform: linux/amd64
     restart: always
 
+  certbot:
+    image: certbot/certbot:latest
+    container_name: certbot
+    networks:
+      - dev
+    volumes:
+      - "./certbot/conf:/etc/letsencrypt"
+      - "./certbot/www:/var/www/certbot"
+    command: certonly --webroot -w /var/www/certbot --force-renewal --email rmnsfx@gmail.com -d valentures.ru -d www.valentures.ru --agree-tos
 
   game:
     build:
