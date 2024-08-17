@@ -14,7 +14,7 @@ services:
     volumes:
       - "./nginx.conf:/etc/nginx/nginx.conf"
       - "./certbot/conf:/etc/letsencrypt"
-      - "./certbot/www:/var/www/certbot"
+      - "./certbot/www:/usr/share/nginx/html"
     networks:
       - dev
     platform: linux/amd64
@@ -29,7 +29,7 @@ services:
       - dev
     volumes:
       - "./certbot/conf:/etc/letsencrypt"
-      - "./certbot/www:/var/www/certbot"
+      - "./certbot/www:/usr/share/nginx/html"
     command: certonly --webroot --webroot-path /usr/share/nginx/html --force-renewal --email rmnsfx@gmail.com --agree-tos --no-eff-email -d valentures.ru -d www.valentures.ru
 
   game:
