@@ -30,7 +30,7 @@ services:
     volumes:
       - "./certbot/conf:/etc/letsencrypt"
       - "./certbot/www:/var/www/certbot"
-    command: certonly --webroot --webroot-path /var/www/certbot --force-renewal --email rmnsfx@gmail.com --agree-tos --no-eff-email -d valentures.ru -d www.valentures.ru
+    command: certonly --webroot --webroot-path /usr/share/nginx/html --force-renewal --email rmnsfx@gmail.com --agree-tos --no-eff-email -d valentures.ru -d www.valentures.ru
 
   game:
     build:
