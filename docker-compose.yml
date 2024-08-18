@@ -20,17 +20,18 @@ services:
     platform: linux/amd64
     restart: always
 
-  certbot:
-    image: certbot/certbot:latest
-    container_name: certbot
-    depends_on:
-      - nginx
-    networks:
-      - dev
-    volumes:
-      - "./certbot/conf:/etc/letsencrypt"
-      - "./certbot/www:/usr/share/nginx/html"
-    command: certonly --webroot --webroot-path /usr/share/nginx/html --force-renewal --email rmnsfx@gmail.com --agree-tos --no-eff-email -d valentures.ru -d www.valentures.ru
+  # certbot:
+  #   image: certbot/certbot:latest
+  #   container_name: certbot
+  #   depends_on:
+  #     - nginx
+  #   networks:
+  #     - dev
+  #   volumes:
+  #     - "./certbot/conf:/etc/letsencrypt"
+  #     - "./certbot/www:/usr/share/nginx/html"
+  #   #command: certonly --webroot --webroot-path /usr/share/nginx/html --dry-run --force-renewal --email rmnsfx@gmail.com --agree-tos --no-eff-email -d valentures.ru -d www.valentures.ru
+  #   command: certonly --webroot --webroot-path /usr/share/nginx/html --force-renewal --email rmnsfx@gmail.com --agree-tos --no-eff-email -d valentures.ru -d www.valentures.ru
 
   game:
     build:
@@ -51,3 +52,6 @@ services:
     ports:
       - "3000:80"
     restart: always
+    volumes:
+      - "./certbot/conf:/etc/letsencrypt"
+      - "./certbot/www:/usr/share/nginx/html"
