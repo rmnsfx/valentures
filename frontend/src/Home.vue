@@ -1,15 +1,15 @@
 <template>
     <v-app id="inspire">
       <v-main class="bg-green-lighten-3">
-        <v-container fluid class="fill-height">
-          <v-row>
+        <v-container class="d-flex flex-column flex-nowrap">
+          <v-row class="flex-1-1-100 mb-10">
             <Vue3Lottie
               animationLink="https://lottie.host/b14150ff-70bd-47e3-9e37-41e94c5008b0/BkXe6swJiG.json"
               :height="250"
               :width="250"/>
           </v-row>
-          <v-row class="d-flex justify-center flex-column align-center text-center">
-            <div class="text-h1 font-weight-bold" style="width:60%">С ДР БРО!</div>
+          <v-row class="text-center">
+            <div class="text-h1 font-weight-bold" style="width:100%">С ДР БРО!</div>
           </v-row>
           <v-row>
               <Vue3Lottie
