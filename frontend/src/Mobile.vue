@@ -10,7 +10,7 @@
           </v-row>
           <v-row>
             <v-col class="d-flex justify-center">
-              <div class="text-h2 font-weight-bold" style="width:70%;">С Днём Рождения, Валерий Олегович!</div>
+              <div class="text-h2 font-weight-bold" style="width:70%;">С ДР БРО!</div>
             </v-col>
           </v-row>
           <v-row>
